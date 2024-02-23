@@ -33,7 +33,7 @@ public class Main {
         }
 
 //task4
-        System.out.println("4");
+        System.out.println("");
         int age4 = 99;
         if ((age4 > 2) && (age4 <= 6)) {
             System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в детский сад");
