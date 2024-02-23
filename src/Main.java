@@ -33,22 +33,16 @@ public class Main {
         }
 
 //task4
-        System.out.println("");
+        System.out.println("4");
         int age4 = 99;
         if ((age4 > 2) && (age4 <= 6)) {
             System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в детский сад");
-        } else {
-            if ((age4 >= 7) && (age4 <= 17)) {
-                System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в школу");
-            } else {
-                if ((age4 >= 18) && (age4 <= 24)) {
-                    System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в университет");
-                } else {
-                    if (age4 > 24) {
-                        System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить на работу");
-                    }
-                }
-            }
+        } else if ((age4 >= 7) && (age4 <= 17)) {
+            System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в школу");
+        } else if ((age4 >= 18) && (age4 <= 24)) {
+            System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в университет");
+        } else if (age4 > 24) {
+            System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить на работу");
         }
 
 //task5
@@ -56,15 +50,11 @@ public class Main {
         int childAge = 17;
         if (childAge < 5) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе");
-        } else {
-            if ((childAge >= 5) && (childAge <= 14)) {
-                System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении");
-            } else {
-                if (childAge > 14) {
-                    System.out.println("Если возраст ребенка равен " + childAge + ", " +
-                            "то ему можно кататься на аттракционе без сопровождения взрослого");
-                }
-            }
+        } else if ((childAge >= 5) && (childAge <= 14)) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении");
+        } else if (childAge > 14) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", " +
+                    "то ему можно кататься на аттракционе без сопровождения взрослого");
         }
 
 //task6
@@ -75,12 +65,10 @@ public class Main {
         int standingPlaces = peopleCapacity - seatingPlaces;
         if (peopleCurrently < seatingPlaces) {
             System.out.println("В вагоне есть " + (seatingPlaces - peopleCurrently) + " сидячих мест");
+        } else if ((peopleCurrently >= 60) && (peopleCurrently < peopleCapacity)) {
+            System.out.println("В вагоне есть " + (peopleCapacity - peopleCurrently) + " стоячих мест");
         } else {
-            if ((peopleCurrently >= 60) && (peopleCurrently < peopleCapacity)) {
-                System.out.println("В вагоне есть " + (peopleCapacity - peopleCurrently) + " стоячих мест");
-            } else {
-                System.out.println("Вагон переполнен");
-            }
+            System.out.println("Вагон переполнен");
         }
 
 //task7
@@ -90,16 +78,14 @@ public class Main {
         int three = 1;
         if ((one > two) && (one > three)) {
             System.out.println("Первое число наибольшее: " + one);
+        } else if ((two > one) && (two > three)) {
+            System.out.println("Второе число наибольшее: " + two);
+        } else if ((three > one) && (three > two)) {
+            System.out.println("Третье число наибольшее: " + three);
         } else {
-            if ((two > one) && (two > three)) {
-                System.out.println("Второе число наибольшее: " + two);
-            } else {
-                if ((three > one) && (three > two)) {
-                    System.out.println("Третье число наибольшее: " + three);
-                } else {
-                    System.out.println("В списке несколько наибольших чисел");
-                }
-            }
+            System.out.println("В списке несколько наибольших чисел");
         }
+        if (one > 10) System.out.println("kek");
     }
 }
+
